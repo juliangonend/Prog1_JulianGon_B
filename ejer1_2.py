@@ -54,9 +54,10 @@ print(f"El promedo de los numeros es : {promedio}")
 
 # Ejer7
 minutos= int(input("Ingrese la cantidad de minutos"))
-horas= minutos/60
+horas= int(minutos/60)
+minutos=minutos%60
 
-print(f" La cantidad de horas es : {horas}")
+print(f" La cantidad de horas es : {horas} con {minutos}" )
 
 # Ejer8
 
@@ -147,10 +148,10 @@ print(f"Ahora estás en la matrix , [{usuario}]")
 # Ejer18
 
 cena = float(input("Ingrese el costo de la cena "))
-servicio=cena%6.2
-propina=cena%10
+servicio=cena*0.62
+propina=cena*0.10
 cena+=  propina + servicio 
-
+print(f"El costo total de la cena es de {cena}")
 # Ejer19
 
 # dd/mm/aaaa
@@ -162,12 +163,11 @@ mes=int(input("Ingrese su mes de nacimiento: "))
 anio=int(input("Ingrese su anio de nacimiento: "))
 
 # Ejer20
-
-dia=int(input("Ingrese su dia de nacimiento: "))
-mes=int(input("Ingrese su mes de nacimiento: "))
-anio=int(input("Ingrese su año de nacimiento: "))
-fecha=datetime.date(anio, mes, dia).strftime('%d/%m/%Y')
-print(fecha)
+fecha=input("Ingrese la fecha de su nacimiento en DDMMAA")
+dia=int(fecha[0:2])
+mes=int(fecha[2:4])
+anio=int(fecha[4:])
+print(f" Su nacimiento es el : {dia}/{mes}/{anio}")
 
 #Ejer21
 
