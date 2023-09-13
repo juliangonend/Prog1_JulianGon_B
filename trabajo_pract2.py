@@ -125,9 +125,12 @@ else:
 a= int(input("ingrese el número a: "))
 b= int(input("ingrese el número b: "))
 print(f"{a}x+{b}=0")
-x= -b / a
-print(f"x=-{b}/{a}")
-print("el resultado de su ecuacion es ",x)
+if a==0:
+    print("no tiene solucion")
+else:
+    x= -b / a
+    print(f"x=-{b}/{a}")
+    print("el resultado de su ecuacion es ",x)
 
 # Ejer15
 
@@ -148,7 +151,6 @@ else:
 num_1=int(input("ingrese el primer numero: "))
 num_2=int(input("ingrese el segundo numero: "))
 operacion=input("Que operacion desea realizar? ingrese '1' para suma, '2' para resta, '3' para multiplicacion y '4' para division: ")
-operacion.lower
 if(operacion=="1"):
     suma=num_1+num_2
     print("la suma es: ", suma)
@@ -159,7 +161,7 @@ elif(operacion=="3"):
     multiplicacion=num_1*num_2
     print("la multiplicasion es: ", multiplicacion)
 elif(operacion=="4"):
-    if(num_1==0 or num_2==0):
+    if( num_2==0):
         print("no se puede dividir por cero")
     else:
         division=num_1/num_2

@@ -41,6 +41,8 @@ while num!=0 :
     #Pedimos el numero
     num=int(input("Ingrese numeros y se le dira si es par o impar y si es == 0 termina la ejecusion : "))
     i=abs(num)
+    par=0
+    impar=0
     #Mientras para descomponer el numero unidad por unidad mientras sea mayor a 0
     while i>0:
         if i>10:
@@ -60,7 +62,8 @@ while num!=0 :
             par+=1
         else:
             impar+=1
-#Imprimos cuantos pares y impares hubo
-print(f"La cantidad de pares es {par} ")
-print(f"La cantidad de impares es {impar} ")
+        #Imprimos cuantos pares y impares hubo
+    print(f"La cantidad del num {num} pares es {par} ")
+    print(f"La cantidad de impares dfe {num} es {impar} ")
+
         
